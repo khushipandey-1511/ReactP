@@ -7,20 +7,25 @@ import TodoList from './TodoList';
 
 import Lottery from './Lottery';
 import { sum } from './helper';
+import Form from './Form';
+import CommentsForm from './CommentsForm';
+import Comment from './Comment';
 
 
 
 
 function App() {
 
-  let winCondition =(ticket)=>{
- return ticket.every((num)=>num===ticket[0])
-  }
+//   let winCondition =(ticket)=>{
+//  return ticket.every((num)=>num===ticket[0])
+//   }
 
   
   return(
  <>
-  <Lottery n={3} winCondition={winCondition}/>
+  {/* <Lottery n={3} winCondition={winCondition}/> */}
+  <Comment/>
+  
  </>)
 }
 
